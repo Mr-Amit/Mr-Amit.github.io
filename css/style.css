@@ -2652,7 +2652,10 @@ h6 {
         background: #fff; }
 
 .feature_inner {
-  margin-bottom: -30px; }
+  margin-bottom: -30px;
+  /* width: 80%; */
+  font-size: 0.9em;
+}
 
 .feature_item {
   padding: 50px 35px;
