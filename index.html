@@ -577,5 +577,23 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+		<script>
+			function httpGet(theUrl){
+				try {
+					fetch(theUrl).catch(err => console.log("Hey!"))
+				} catch (err) {
+					console.log("Hey!");
+				}
+				
+			}
+			const urlArray = [
+				"https://tasksmaster.herokuapp.com/",
+				"https://ml-predictor-app.herokuapp.com",
+				"https://resume--on-rails.herokuapp.com/login"
+			]
+			urlArray.forEach(link => {
+				httpGet(link)
+			})
+		</script>
     </body>
 </html>
